@@ -10,6 +10,7 @@ choices = [
 ]
 
 until user_win_count == 10 || computer_win_count == 10
+  puts "First to 10, wins!"
   number = Random.new.rand(0..2)
   prompt = TTY::Prompt.new
   user_selection = prompt.select("Choose your weapon!", choices)
